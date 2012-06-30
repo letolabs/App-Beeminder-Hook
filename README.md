@@ -11,10 +11,13 @@ submits it to the awesome [Beeminder](http://beeminder.com) API.
 
     git clone git://github.com/letolabs/App-Beeminder-Hook.git
     cd App-Beeminder-Hook
- * Install dependencies:
+
+ * Install dependencies with cpan or better yet, cpanm:
+
     cpanm Dancer YAML JSON::Any
 
-    # or with Dist::Zilla
+ * Or with Dist::Zilla
+
     dzil listdeps | cpanm
 
  * Start this dancer app via
@@ -25,11 +28,11 @@ submits it to the awesome [Beeminder](http://beeminder.com) API.
  * Add a post-receive hook to any Github repo you want to keep track of. For instance, if the hostname of your app is "foo.com", set you post receive URL to:
 
     http://foo.com:5000/hook
- * If 
 
 # Requirements
 
- * Perl [Dancer](http://perldancer.org)
+ * Perl 5.10 or higher
+ * [Dancer](http://perldancer.org)
  * curl
 
 # Thanks
