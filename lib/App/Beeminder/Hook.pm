@@ -3,6 +3,7 @@ use Dancer ':syntax';
 use JSON::Any;
 use feature 'say';
 use autodie;
+use Data::Dumper;
 
 # ABSTRACT: Integrate Github and Beeminder
 
@@ -20,6 +21,8 @@ any '/hook' => sub {
     }
 
     $p = JSON::Any->new->decode( $p );
+
+    debug(Dumper($p));
 
     my $repo_name   = $p->{repository}{name};
     my $num_commits = @{$p->{commits}};
