@@ -29,7 +29,9 @@ any '/hook' => sub {
 
     my $day_of_month = (localtime(time))[3];
 
-    my $cmd='curl -d "origin=%s&datapoints_text=%s %s "%s"&sendmail=0" %s/%s/goals/%s/datapoints/create_all';
+    my $cmd=<<CMD;
+curl -d 'origin=%s&datapoints_text=%s %s "%s"&sendmail=0' %s/%s/goals/%s/datapoints/create_all
+CMD
 
     $cmd = sprintf($cmd, config->{beeminder_username},
         $day_of_month,
@@ -39,7 +41,7 @@ any '/hook' => sub {
         config->{beeminder_username},
         config->{beeminder_goal},
     );
-    say "Running: $cmd";
+    debug "Running: $cmd";
     system $cmd;
 
     my $response = JSON::Any->encode( { success => 1 } );
