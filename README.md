@@ -3,6 +3,11 @@
 This is a dead-simple Dancer app that eats Github post-receive hook JSON and
 submits it to the awesome [Beeminder](http://beeminder.com) API.
 
+# Why the hell would I want to use this?
+
+There is an interesting movement called the "quantified self". Basically:
+measure everything! Everybody is interested in measuring different things.
+
 # How Do I use this?
 
  * Go to [Beeminder](http://beeminder.com) and create a free account
