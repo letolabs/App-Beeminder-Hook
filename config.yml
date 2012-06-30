@@ -27,3 +27,7 @@ template: "simple"
 #     start_tag: '[%'
 #     end_tag:   '%]'
 
+beeminder_username: dukeleto
+beeminder_goal: github_commits
+beeminder_origin: dukeleto_api
+beeminder_api_url: http://beta.beeminder.com
