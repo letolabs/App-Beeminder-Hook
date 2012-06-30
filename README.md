@@ -33,11 +33,19 @@ You will notice that every time I push to Github, it submits a datapoint to Beem
 
  * Go to [Beeminder](http://beeminder.com) and create a free account
  * Create a new goal with a type of "Do More"
- * Change the beeminder* config values in config.yml to match your username and goal name. Set your origin to "$username_api"
+ * Install App::Beeminder::Hook from Github
 
     git clone git://github.com/letolabs/App-Beeminder-Hook.git
 
+ * If you don't want to use Git, you can also download a tarball from CPAN:
+
+   wget http://www.cpan.org/authors/id/L/LE/LETO/App-Beeminder-Hook-0.001.tar.gz
+
+ * Go into the source directory
+
     cd App-Beeminder-Hook
+
+ * Change the beeminder* config values in config.yml to match your username and goal name. Set your origin to "$username_api"
 
  * Install dependencies with cpan or better yet, cpanm:
 
