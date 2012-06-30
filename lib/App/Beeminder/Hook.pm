@@ -24,9 +24,9 @@ any '/hook' => sub {
 
     debug(Dumper($p));
 
-    my $repo_name   = $p->{repository}{name};
-    my $num_commits = @{$p->{commits}};
-
+    my $repo_name    = $p->{repository}{name};
+    my $organization = $p->{repository}{organization};
+    my $num_commits  = @{$p->{commits}};
     my $day_of_month = (localtime(time))[3];
 
     my $cmd=<<CMD;
@@ -36,7 +36,7 @@ CMD
     $cmd = sprintf($cmd, config->{beeminder_username},
         $day_of_month,
         $num_commits,
-        $repo_name, # optional comment
+        "$organization/$repo_name", # optional comment
         config->{beeminder_api_url},
         config->{beeminder_username},
         config->{beeminder_goal},
