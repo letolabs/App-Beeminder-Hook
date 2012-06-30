@@ -19,6 +19,16 @@ This repo allows you to automate submitting data to Beeminder by setting
 post-receive URLs. Now you can keep track of your coding productivity with
 maximum laziness!
 
+# Show me an example already!
+
+Take a look at my ["Total Number of Github commits" Beeminder goal](https://www.beeminder.com/dukeleto/goals/github_commits).
+
+You will notice that every time I push to Github, it submits a datapoint to Beeminder consisting of:
+
+ * The current day
+ * Number of commits
+ * the organization + repo of the commits
+
 # How Do I use this?
 
  * Go to [Beeminder](http://beeminder.com) and create a free account
