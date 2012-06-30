@@ -36,6 +36,7 @@ You will notice that every time I push to Github, it submits a datapoint to Beem
  * Change the beeminder* config values in config.yml to match your username and goal name. Set your origin to "$username_api"
 
     git clone git://github.com/letolabs/App-Beeminder-Hook.git
+
     cd App-Beeminder-Hook
 
  * Install dependencies with cpan or better yet, cpanm:
@@ -57,9 +58,14 @@ You will notice that every time I push to Github, it submits a datapoint to Beem
 
 # Requirements
 
- * Perl 5.10 or higher
+ * [Perl](http://perl.org) 5.10 or higher
  * [Dancer](http://perldancer.org)
  * curl
+
+# I want this to do something else!
+
+This is just the beginning. If you would like to track more than just your
+number of commits, that is awesome! Pull requests are very welcome.
 
 # Thanks
 
