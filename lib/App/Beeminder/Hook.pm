@@ -45,4 +45,8 @@ any '/hook' => sub {
     my $response = JSON::Any->encode( { success => 1 } );
 };
 
+get '/' => sub {
+    'This is App::Beeminder::Hook';
+};
+
 true;
