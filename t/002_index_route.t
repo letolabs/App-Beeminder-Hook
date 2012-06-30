@@ -6,5 +6,5 @@ use warnings;
 use App::Beeminder::Hook;
 use Dancer::Test;
 
-route_exists [GET => '/'], 'a route handler is defined for /';
-response_status_is ['GET' => '/'], 200, 'response status is 200 for /';
+route_exists [GET => '/hook'], 'a route handler is defined for /';
+response_status_is ['GET' => '/hook'], 200, 'response status is 200 for /';
