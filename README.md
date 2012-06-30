@@ -8,6 +8,17 @@ submits it to the awesome [Beeminder](http://beeminder.com) API.
 There is an interesting movement called the "quantified self". Basically:
 measure everything! Everybody is interested in measuring different things.
 
+I first started using Beeminder to track my
+[weight](https://www.beeminder.com/dukeleto/goals/weight). If you have ever
+heard of the "Hacker Diet", it basically automates all the tracking and
+visualization. You just need to submit the data.
+
+That is all fine and dandy for reporting a single number once a day. But then I wanted to keep track of how productive I was being on Github. Trying to estimate how much time I spent coding and submitting that data was a big fail. I am too lazy for that. Github post-receive URLs to the rescue!
+
+This repo allows you to automate submitting data to Beeminder by setting
+post-receive URLs. Now you can keep track of your coding productivity with
+maximum laziness!
+
 # How Do I use this?
 
  * Go to [Beeminder](http://beeminder.com) and create a free account
