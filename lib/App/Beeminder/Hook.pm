@@ -1,7 +1,6 @@
 package App::Beeminder::Hook;
 use Dancer ':syntax';
 use JSON::Any;
-use feature 'say';
 use autodie;
 use Data::Dumper;
 
